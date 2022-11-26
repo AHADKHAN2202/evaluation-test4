@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+.header img{
+    margin:4% 12% ;
+    border: none;
+    box-shadow: 0px 0px 3px 2px;
+}
+.header-desc{
+    position: absolute;
+    left:41.7em;
+    top:5em;
+}
+ h2{
+    font-size:45px;
+    font-family:'Times New Roman', Times, serif;
+    color: #323232;
+}
+
+.header-desc2{
+    position: absolute;
+    left:46.5em;
+    top:10em;
+}
+
+.image-para{
+    position: absolute;
+    left:46.5em;
+    top:15em;
+}
+
+.image-para p{
+    color: #323232;
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+
+.btn-container1{
+    position: absolute;
+    left:46.5em;
+    top:23em;
+}
+.btn-container2{
+    position: absolute;
+    left:46.5em;
+    top:27em;
+}
+.btn-container3{
+    position: absolute;
+    left:46.5em;
+    top:31em;
+}
+.btn-container4{
+    position: absolute;
+    left:46.5em;
+    top:35em;
+}
+
+ button{
+    background-color: #323232;
+    color: white;
+    text-align: center;
+    margin:5px;
+     height:5vh;
+     width:20vw;
+     padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius:2em;
+}
+
+.footer{
+    margin-left:10%;
+    width: max-content;
+}
+
+.fa-brands{
+      font-size:1.5em;
+      padding-left:2em;
+}
+
+/* @media  screen and (max-width:1100px){
+  
+    .header{
+        position:absolute;
+        bottom: 5px;
+        top:600px;
+       border: 2px solid red;
+    } *
+    .header-desc{
+      position: absolute;
+      width:max-content;
+       left:100px;
+       border: 2px solid red;
+    }
+    .header-desc2{
+        position: absolute;
+        left:100px;
+        border: 2px solid red;
+    }
+    .image-para{
+        position: absolute;
+        left:100px;
+        border: 2px solid red;
+    }
+    .btn-container1{
+        position: absolute;
+        left:100px;
+        border: 2px solid red;
+    }
+    .btn-container2{
+        position: absolute;
+        left:100px;
+        border: 2px solid red;
+    }
+    .btn-container3{
+        position: absolute;
+        left:100px;
+        border: 2px solid red;
+    }
+    .btn-container4{
+        position: absolute;
+        left:100px;
+        border: 2px solid red;
+    }
+
+    footer{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        border: 2px solid red;
+    }
+} */
+
+@media only screen and (max-width:1100px) {
+    header{
+      display: flex;
+      justify-content: center;
+     align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .header{ 
+        position:absolute;
+        top:1080px;
+        width:100%;
+        left:100px ;
+        bottom: 0;
+    } 
+    .header-desc,.header-desc2,.image-para,.btn-container1,.btn-container2,.btn-container3,.btn-container4{
+        position:relative;
+        left: 0;
+    }
+    footer{
+     position: absolute;
+     top: 1050px;
+     left:290px;
+    }
+    .header img{
+        width:50%;
+    }
+}

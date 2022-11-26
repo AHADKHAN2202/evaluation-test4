@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-   
+    box-sizing: border-box;
 }
 
 .header img{
@@ -63,10 +63,10 @@
     background-color: #323232;
     color: white;
     text-align: center;
-    margin:5px;
+     margin:5px;
      height:5vh;
      width:20vw;
-     padding: 10px 20px 10px 20px;
+     padding: 10px 20px;
     border: none;
     border-radius:2em;
 }
@@ -138,27 +138,76 @@
     header{
       display: flex;
       justify-content: center;
-     align-items: center;
+      align-items: center;
       flex-direction: column;
-      flex-wrap: wrap;
     }
     .header{ 
         position:absolute;
         top:1080px;
-        width:100%;
-        left:100px ;
+        left:50%;
+        transform:translate(-60%) ;
         bottom: 0;
-    } 
+        margin-top: -100px;
+
+    }
     .header-desc,.header-desc2,.image-para,.btn-container1,.btn-container2,.btn-container3,.btn-container4{
         position:relative;
         left: 0;
+       
     }
-    footer{
+    button{
+        width: 100%;
+        background-color:#323232;
+    }
+    .footer{
      position: absolute;
      top: 1050px;
-     left:290px;
+     left:50%;
+     transform: translate(-90%);
+     margin-top: -150px;
+    }
+    .footer i{
+        padding-left:60px;
     }
     .header img{
-        width:50%;
+        width:100%;
+      
     }
+}
+
+@media only screen and (max-width:600px) {
+      .header-desc,.header-desc2,.image-para{
+        position: absolute;
+        left: 0;
+        padding-left: 25px;
+      }
+      .button-container{
+       position: absolute;
+       left: 0;
+       padding-left: 25px;
+       width:90%;
+      }
+      button{
+        padding-bottom:40px;
+        font-size: 25px;
+
+      }
+      .header{
+        position: absolute;
+        left:50%;
+        transform: translate(-63%);
+        margin-top:-100px ;
+        width:80%;
+      }
+      .footer{
+        margin-top: -200px;
+        position: absolute;
+        left:50%;
+        transform: translate(-54%);
+        margin-left:-35px ;
+        font-size: 30px;
+      }
+      .footer i{
+        padding-left: 2em;
+      }
 }
